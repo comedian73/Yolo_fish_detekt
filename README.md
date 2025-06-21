@@ -284,4 +284,16 @@ imgs = []
 for image in files:
     result_train(image)
 ```
+![Тестовое распознование во время обучения](https://github.com/comedian73/Yolo_fish_detekt/blob/main/foto_yolo_/metrics_1.png)
+*Такое распознование сделала обученая модель на тестовой картинке во время обучения*
+
+```Python
+# Просмотр графиков и кривых
+data_dir = "./runs/detect/train"
+img_dir = os.path.join(data_dir, '*curve*.png')
+files = glob.glob(img_dir)
+imgs = []
+for image in files:
+    result_train(image)
+```
 
